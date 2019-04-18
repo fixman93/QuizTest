@@ -1,0 +1,46 @@
+.QuestionItem {
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.Done {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F8F9FA;
+    top: 0;
+    left: 0;
+    opacity: 0.96;
+    border: 2px solid #C7D8E4;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
+
+.Finished {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.126px;
+  color: #9CB2C2;
+}
+
+.notFinished {
+  display: none;
+}
